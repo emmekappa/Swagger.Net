@@ -156,6 +156,9 @@
     <Content Include="docs\swagger-ui.js" />
     <Content Include="docs\swagger-ui.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="js\shred.bundle.js" />
+    <Content Include="js\swagger.js" />
+    <Content Include="swagger.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -169,9 +169,7 @@ namespace Swagger.Net
             ReflectedHttpActionDescriptor reflectedActionDescriptor = actionDescriptor as ReflectedHttpActionDescriptor;
             if (reflectedActionDescriptor != null)
             {
-                return reflectedActionDescriptor.MethodInfo.Name +
-                       string.Join("_", reflectedActionDescriptor.GetParameters()
-                           .Select(x => x.ParameterType.Name));
+                return reflectedActionDescriptor.ActionName;
             }
 
             return "NicknameNotFound";

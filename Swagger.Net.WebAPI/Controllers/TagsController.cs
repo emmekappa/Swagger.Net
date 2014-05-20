@@ -13,6 +13,7 @@ namespace Swagger.Net.WebApi.Controllers
         /// Get all of the Tags
         /// </summary>
         /// <returns></returns>
+        [ActionName("GetAll")]        
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
@@ -23,9 +24,9 @@ namespace Swagger.Net.WebApi.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public string Get(int id)
+        public string Get(string id)
         {
-            return "value";
+            return id;
         }
 
         /// <summary>
